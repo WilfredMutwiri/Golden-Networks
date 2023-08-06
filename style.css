@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* the nav section */
+.navBar{
+    width: 100%;
+    height: 85px;
+    padding: 16px;
+    background: rgb(245, 243, 243);
+}
+.navBar h2{
+    color: rgb(18, 223, 189);
+    font-size: 23px;
+}
+.navContainer ul{
+    display: flex;
+    justify-content:space-evenly;
+}
+.navContainer ul li,.navContainer a{
+    list-style: none;
+    margin-top: 12px;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+}
+.navContainer a:hover{
+    cursor: pointer;
+    color: red;
+}
+/* the home section */
+.homeHolder{
+    width: 100%;
+    padding-top: 80px;
+    padding-left: 20px;
+    display: flex;
+    justify-content:space-around;
+    background: rgb(245, 243, 243);
+    padding-bottom: 50px;
+}
+#homeContent h1{
+    font-size: 37px;
+    line-height: 45px;
+    padding-bottom: 25px;
+}
+#homeContent p{
+    line-height: 26px;
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+button{
+    height:40px;
+    width: 166px;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 14px;
+}
+#CTA{
+    margin-right: 15px;
+    background:rgb(12, 228, 192);
+}
+#cta2{
+    background: black;
+    color: white;
+}
+#cta2:hover,#CTA:hover{
+    background: rgb(243, 4, 4);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.homeImage img{
+    border-radius: 90px;
+    margin-top: -40px;
+    margin-left: -20px;
+}
