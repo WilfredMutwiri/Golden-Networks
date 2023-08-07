@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 /* the nav section */
 .navBar{
@@ -74,4 +75,70 @@ button{
     border-radius: 90px;
     margin-top: -40px;
     margin-left: -20px;
+}
+/* services section */
+#services{
+    width: 100%;
+    height: auto;
+    background:rgb(226, 226, 226);
+    padding: 20px;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+#services h2{
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 40px;
+}
+#services p{
+    line-height: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 17px;
+}
+.servicesHolder{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+#internet,#cctv,#web,#electrial,#solar,#gadgets,#telecommunication{
+    width:300px;
+    height: auto;
+    padding: 15px;
+    border: 2px solid rgb(12, 12, 12);
+    margin: 30px;
+    border-radius: 10px;
+    background: rgb(230, 230, 230);
+    box-shadow: 0 0 15px rgb(61, 61, 61);
+}
+#internet:hover,#cctv:hover,#web:hover,#electrial:hover,#solar:hover,#gadgets:hover,#telecommunication:hover{
+    color: rgb(243, 241, 241);
+    background: rgb(0, 0, 0);
+}
+#internet h3,#cctv h3,#web h3,#electrial h3,#solar h3,#gadgets h3,#telecommunication h3{
+    padding: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+#internet p,#cctv p,#web p,#electrial p,#solar p,#gadgets p,#telecommunication p{
+    line-height: 25px;
+}
+#internet a,#cctv a,#web a,#electrial a,#solar a,#gadgets a,#telecommunication a{
+    text-decoration: none;
+    color: rgb(6, 199, 6);
+    text-align: center;
+}
+#internet a:hover,#cctv a:hover,#web a:hover,#electrial a:hover,#solar a:hover,#gadgets a:hover,#telecommunication a:hover{
+    cursor: pointer;
+    color: rgb(250, 7, 7);
+}
+#internet img,#cctv img,#web img,#electrial img,#solar img,#gadgets img,#telecommunication img{
+    width: 100px;
+    border-radius:100px;
+    margin-left: 80px;
+    padding: 10px;
 }
