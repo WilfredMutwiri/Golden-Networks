@@ -18,7 +18,10 @@
 }
 .navContainer ul{
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-around;
+    width: 75%;
+    margin-left: 13%;
+    height: 60px;
 }
 .navContainer ul li,.navContainer a{
     list-style: none;
@@ -115,7 +118,7 @@ button{
 }
 #internet:hover,#cctv:hover,#web:hover,#electrial:hover,#solar:hover,#gadgets:hover,#telecommunication:hover{
     color: rgb(243, 241, 241);
-    background: rgb(0, 0, 0);
+    background: rgb(12, 12, 12);
 }
 #internet h3,#cctv h3,#web h3,#electrial h3,#solar h3,#gadgets h3,#telecommunication h3{
     padding: 20px;
@@ -141,4 +144,36 @@ button{
     border-radius:100px;
     margin-left: 80px;
     padding: 10px;
+}
+/* the about section */
+#aboutHolder{
+    display: flex;
+    padding: 20px;
+    padding-top: 100px;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    background: rgb(236, 236, 236);
+    padding-bottom: 50px;
+}
+#aboutContent{
+    height: auto;
+    width: 500px;
+    padding: 20px;
+}
+#aboutContent h2{
+    line-height: 20px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+#aboutContent p{
+    line-height: 30px;
+    padding-bottom: 50px;
+}
+#aboutImages img{
+    width: 410px;
+    border-radius:10px;
+    margin-right: 110px;
+    margin-top: 50px;
+    border: 2px solid rgb(12, 12, 12);
 }
