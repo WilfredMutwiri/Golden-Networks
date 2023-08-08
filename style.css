@@ -154,7 +154,7 @@ button{
     width: 100%;
     height: auto;
     background: rgb(236, 236, 236);
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 #aboutContent{
     height: auto;
@@ -176,4 +176,87 @@ button{
     margin-right: 110px;
     margin-top: 50px;
     border: 2px solid rgb(12, 12, 12);
+}
+/* statistics section */
+.statistics{
+    width: 100%;
+    height:auto;
+    display: flex;
+    justify-content:space-around;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background:rgb(20, 180, 154);
+
+}
+.statistics h3{
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+}
+.statistics img{
+    width: 60px;
+    border-radius:100px;
+    margin-left: 33px;
+}
+#years img{
+    margin-left: 43px;
+}
+/* the pricing section */
+.prices{
+    padding: 30px;
+    padding-top: 100px;
+    width: 100%;
+    height: auto;
+    padding-bottom: 80px;
+    background: rgb(243, 243, 243);
+}
+#PricesHeading{
+    line-height: 20px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.priceHolder{
+    display: flex;
+    justify-content: space-around;
+}
+.priceHolder span{
+    font-size: 39px;
+}
+.priceHolder h2{
+    padding-bottom: 15px;
+    text-align: center;
+}
+.priceHolder h3{
+    text-align: center;
+    color: rgb(18, 172, 18);
+    padding-bottom: 20px;
+}
+.priceHolder ul{
+    list-style: none;
+    padding-bottom: 20px;
+}
+.priceHolder ul li{
+    line-height: 28px;
+}
+.priceHolder button{
+    border-radius: 13px;
+    background-color: rgb(12, 12, 12);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    margin-left: 20px;
+}
+.priceHolder button:hover{
+    background: rgb(240, 4, 4);
+}
+#basic,#business,#premium{
+    border: 2px solid rgb(15, 15, 15);
+    padding: 23px;
+    border-radius: 10px;
+    background: rgb(219, 216, 216);
+    box-shadow: 0 0 15px rgb(15, 15, 15);
+}
+#basic:hover,#business:hover,#premium:hover{
+    background:rgb(24, 19, 19);
+    /* background: white; */
+    color: rgb(255, 255, 255);
 }
