@@ -14,3 +14,16 @@ function reveal(){
         }
     }
 }
+let hmeBtn=document.getElementById("CTA");
+hmeBtn.addEventListener("click",hmeBtnClick);
+function hmeBtnClick(){
+    alert("Content unavailable. Site still under development");
+}
+
+// class Links{
+//     constructor(link){
+//         this.link=link;
+//     }
+// }
+
+// let link1=new Links(document.getElementById("internet a"));

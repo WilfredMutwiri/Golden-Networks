@@ -68,9 +68,18 @@ button{
     margin-right: 15px;
     background:rgb(12, 228, 192);
 }
+#CTA a{
+    color: rgb(0,0, 0);
+    font-size: 14px;
+    text-decoration: none;
+}
 #cta2{
-    background: black;
-    color: white;
+    background: rgb(0, 0, 0);
+}
+#cta2 a{
+    text-decoration: none;
+    font: 14px;
+    color: rgb(255, 255, 255);
 }
 #cta2:hover,#CTA:hover{
     background: rgb(243, 4, 4);
