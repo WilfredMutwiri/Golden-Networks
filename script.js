@@ -95,4 +95,34 @@ let projectsCount=setInterval(() => {
 },5.6);
 
 }
-// the testimonies section
+//  testimonies section
+let testimoner=document.querySelector("#testimonial h4");
+let testimonerTitle=document.querySelector("#testimonial span");
+let testimony=document.querySelector("#testimonial p")
+let forwardBtn=document.querySelector("#forwardBtn");
+let backBtn=document.querySelector("#backBtn");
+let Image=document.querySelector("#testimonial img");
+let Tnames=["@Joshua Mwendwa","@Wilfred Mutwiri","@Ruth Anyango","@Michael Kinyua","@Princess Favour"];
+let Ttitles=["Customer","Customer","Team Member","Customer","Team Member"];
+let testimonies=["Golden Networks ave been the best internet service providers for my organisation for a decade now! I recommend them to everyone out there.","When it comes to electrical installation and computer repair, I will definetely choose the Golden Networks","Maybe their name depics their nature because their services are just golden special. Thank you Golden Networks","Golden networks are understanding and customer friendly. I appreciate what they are doing out here!","Golden networks is the real deal when it comes to internet provision"];
+let Counter=0;
+forwardBtn.addEventListener("click",forwardClick);
+backBtn.addEventListener("click",backClick);
+function forwardClick(){
+    testimoner.innerHTML=Tnames[Counter];
+    testimonerTitle.innerHTML=Ttitles[Counter];
+    testimony.innerHTML=testimonies[Counter];
+    Counter++;
+    if(Counter>=Tnames.length){
+    Counter=0;
+    }
+}
+function backClick(){
+    testimoner.innerHTML=Tnames[Counter];
+    testimonerTitle.innerHTML=Ttitles[Counter];
+    testimony.innerHTML=testimonies[Counter];
+    Counter--;
+    if(Counter<=Tnames.length){
+        Counter=1;
+        }
+}
