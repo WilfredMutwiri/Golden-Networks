@@ -19,6 +19,13 @@ body{
     color: rgb(18, 223, 189);
     font-size: 23px;
 }
+.navBar img{
+    width: 30px;
+    margin-left: 120px;
+    opacity: 0;
+    border-radius: 3px;
+
+}
 .navContainer ul{
     display: flex;
     justify-content:space-around;
@@ -63,6 +70,9 @@ button{
     border-radius: 20px;
     padding: 10px;
     font-size: 14px;
+}
+#btnHolder{
+    display: flex;
 }
 #CTA{
     margin-right: 15px;
@@ -575,4 +585,76 @@ list-style: none;
     transform: translateX(0px);
     opacity: 1;
 
+}
+/* media queries */
+@media(max-width:600px){
+    /* nav section */
+    .navBar{
+        background: rgb(10, 10, 10);
+        width: 100%;
+    }
+    .navBar h2{
+        font-size: 18px;
+    }
+    .navContainer{
+        height:200px;
+        background: rgb(10, 10, 10);
+        opacity: 0;
+    }
+    .navContainer ul{
+        display: inline-block;
+
+    }
+    .navContainer ul li a{
+        color: rgb(255, 255, 255);
+        background: rgb(10, 10, 10);
+        padding-bottom: 10px;
+    }
+    /* home section */
+    .homeHolder{
+        margin-top:0px;
+        padding-top: 30px;
+        max-width:100%;
+    }
+    .homeImage{
+        opacity: 0;
+        margin-left: -300px;
+    }
+    .homeImage img{
+        width:230px;
+        margin-top: 70px;
+        margin-left:0px;
+        opacity:0.6;
+    }
+    .navBar img{
+        opacity: 1;
+    }
+   #homeHolder{
+    display:flex;
+    max-width: 100%;
+   }
+    #homeContent h1{
+        font-size: 30px;
+        line-height: 35px;
+        max-width: 100%;
+        margin-left: -30px;
+        font-weight: bold;
+    }
+     #homeContent p{
+        font-size: 16px;
+        line-height: 20px;
+        padding-right: 10px;
+        padding-top: 10px;
+        height:auto;
+        position:absolute;
+        font-weight: 549;
+        margin-left: -30px;
+}
+#btnHolder{
+    display: flex;
+}
+#homeContent button{
+    margin-top: 200px;
+    width: 120px;
+}
 }

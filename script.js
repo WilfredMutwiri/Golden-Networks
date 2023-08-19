@@ -126,3 +126,54 @@ function backClick(){
         Counter=1;
         }
 }
+// form section
+let formBtn=document.querySelector("#contanctForm button");
+let nameInput=document.querySelector("#name");
+let emailInput=document.querySelector("#email")
+let phoneInput=document.querySelector("#phone")
+let msgInput=document.querySelector("#text");
+formBtn.addEventListener("click",formBtnClick);
+function formBtnClick(){
+    if(nameInput.value===""){
+        alert("Kindly Enter your name to proceed");
+    }else if(emailInput.value===""){
+        alert("Kindly Enter your email address to proceed");
+    }else if(phoneInput.value===""){
+        alert("Kindly Enter your phone number to proceed");
+    }else if(msgInput.value===""){
+        alert("Kindly Enter leave us a message to proceed");
+    }else{
+        alert(`Thank you for your Interest in the Golden Networks Services. An email has been sent to ${emailInput.value}`)
+    }
+// clear input values
+    nameInput.value="";
+    emailInput.value="";
+    phoneInput.value="";
+    msgInput.value="";
+}
+// footer section...subscription
+subscribeBtn=document.querySelector("#subscribe button");
+subscribeInput=document.querySelector(".subscribeInput input");
+subscribeBtn.addEventListener("click",subscribeClick);
+function subscribeClick(){
+    if(subscribeInput.value==""){
+        alert("Enter email address to subscribe!")
+    }else{
+        alert(`Subscription Successfull!. An email has been sent to ${subscribeInput.value}`);
+    }
+    subscribeInput.value="";
+}
+// reveal the nav bar
+let navIcon=document.querySelector("#navIcon");
+let navBar=document.querySelector(".navBar");
+let navContainer=document.querySelector(".navContainer");
+navIcon.addEventListener("mouseover",navIconOver);
+function navIconOver(){
+navBar.style.height="260px";
+navContainer.style.opacity="1";
+}
+navBar.addEventListener("mouseleave",navLeave);
+function navLeave(){
+navBar.style.height="";
+navContainer.style.opacity="";
+}

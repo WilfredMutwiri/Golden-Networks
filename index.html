@@ -10,7 +10,7 @@
 <header>
 <div class="navBar">
     <nav>
-        <h2>Golden Networks</h2>
+        <h2>Golden Networks <img id="navIcon" src="images/Screenshot 2023-08-19 152627.png"></h2>
         <div class="navContainer">
             <ul>
                 <li><a href="#homeContent">Home</a></li>
@@ -33,8 +33,14 @@
         provider based in Kapsabet, Nandi county, Kenya.<br>
         We are recognized for our excellence in delivering seamless connectivity<br>
         advanced technology solutions and outstading customer service</p>
-        <button id="CTA"><a href="#" onclick="linkClick()">Read More</a></button>
-        <button id="cta2"><a href="#contanctForm">Contact Us</a></button>
+        <div id="btnHolder">
+        <div>
+            <button id="CTA"><a href="#" onclick="linkClick()">Read More</a></button>
+        </div>
+        <div>
+            <button id="cta2"><a href="#contanctForm">Contact Us</a></button>
+        </div>
+        </div>
     </div>
     <div class="homeImage">
 <img src="images/Screenshot 2023-08-07 000353.png">
@@ -293,6 +299,7 @@
 </div>
 </section>
 <section>
+    <!--form section-->
     <div id="contactsHolder" class="reveal">
         <div id="contacts">
         <div id="ContactImg" class="reveal">
@@ -340,7 +347,7 @@
         <div id="subscribe">
             <h4>Don't be left behind<br>Subscribe to our magazine to get updates of our services</h4>
             <div class="subscribeInput">
-                <div><input type="email" placeholder="Enter Your Email"><br></div>
+                <div><input type="email" placeholder="Enter Your Email" id="email"><br></div>
                 <div><button>Subscribe</button></div>
             </div>
         </div>
