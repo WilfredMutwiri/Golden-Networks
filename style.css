@@ -166,6 +166,7 @@ button{
     border-radius:100px;
     margin-left: 80px;
     padding: 10px;
+    object-fit:cover;
 }
 /* the about section */
 #aboutHolder{
@@ -307,7 +308,9 @@ width: 400px;
 margin: 20px;
 }
 #first img,#second img,#third img,#fourth img{
-    width: 300px;
+    width: 320px;
+    height: 400px;
+    object-fit: cover;
     border-radius: 5px;
     margin-left: 45px;
     margin-top: 15px;
@@ -389,7 +392,7 @@ margin: 20px;
 #teamHolder{
     width: 100%;
     height: auto;
-    background-color: rgb(248, 248, 248);
+    background-color: #f8f8f8;
     padding: 40px;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -407,9 +410,9 @@ margin: 20px;
     margin-top: 20px;
     width: 360px;
     height:auto;
-    background: rgb(231, 231, 231);
+    background: #e7e7e7;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgb(12, 12, 12);
+    box-shadow: 0 0 5px rgb(12, 12, 12);
 }
 #ceo h4,#ceo p,#technical1 h4,#technical1 p,#technical2 h4,#technical2 p{
     font-size: 20px;
@@ -421,12 +424,12 @@ margin: 20px;
     font-size: 16px;
 }
 #ceo img,#technical1 img,#technical2 img{
-    width: 300px;
-    margin-left: 30px;
+    width: 400px;
+    height: 500px;
+    object-fit:contain;
     padding-top: 40px;
     padding-bottom: 40px;
     border-radius: 50%;
-    height: 500px;
 }
 .icons{
     display: flex;
@@ -456,6 +459,9 @@ margin: 20px;
 #ContactImg img{
 border-radius: 20px;
 margin-right: 50px;
+width: 500px;
+height: 600px;
+object-fit:contain;
 }
 #contanctForm{
 margin-top: 20px;
